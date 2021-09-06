@@ -5,11 +5,11 @@ class arpudha
   public:
   arpudha()
   {
-      cout<<"This is Constructor";
+      cout<<"This is Constructor"<<endl;
   }
   ~arpudha()
   {
-      cout<<"This  is Desctructor";
+      cout<<"This  is Desctructor"<<endl;
   }
 };
 int main()
