@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+class arpudha
+{
+  public:
+  arpudha()
+  {
+      cout<<"This is Constructor";
+  }
+  ~arpudha()
+  {
+      cout<<"This  is Desctructor";
+  }
+};
+int main()
+
+{
+    arpudha a;
+    arpudha b;
+}
