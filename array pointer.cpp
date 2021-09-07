@@ -11,7 +11,7 @@ int main()
     for(i=0;i<=4;i++)
     {
         ptr[i]=&a[i];
-        cout<<ptr[i]<<endl;;
+        cout<<ptr[i]<<endl;
     }
 
 }
