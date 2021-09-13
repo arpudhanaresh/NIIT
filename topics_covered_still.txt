@@ -3,7 +3,7 @@ variables
 constants
 operators
 control statement/flow control
-if, if-else, switch, for , while, dowhile
+if, if-else, switch, for , while, do-while
 arrays
 access specifiers
 public, private, protected
