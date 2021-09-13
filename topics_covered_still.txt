@@ -1,0 +1,14 @@
+datatype
+variables
+constants
+operators
+control statement/flow control
+if, if-else, switch, for , while, dowhile
+arrays
+access specifiers
+public, private, protected
+pointers
+functions
+oops
+abstraction,encapsulation,inheritance,polymorphism
+object,class,method/function, attributes - cariables/constants
