@@ -12,3 +12,4 @@ functions
 oops
 abstraction,encapsulation,inheritance,polymorphism
 object,class,method/function, attributes - cariables/constants
+constructor
