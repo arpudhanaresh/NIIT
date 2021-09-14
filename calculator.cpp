@@ -7,6 +7,12 @@ public:
     {
         int a=0, b=0, c=0;
     }
+    calc(int x, int y, int z)
+    {
+       int  a=x;
+       int  b=y;
+        int c=z;
+    }
     int add(int a, int b)
     {
 
@@ -28,11 +34,16 @@ public:
         int c=a/b;
         return c;
     }
+    ~calc()
+    {
+        int a=0,b=0,c=0;
+    }
 };
 
 int main()
 {
     calc cal;
+    calc cal1(0,0,0);
     int a,b,n;
     cout<<"Enter number 1:";
     cin>>a;
