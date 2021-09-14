@@ -2,41 +2,43 @@
 using namespace std;
 class calc
 {
+private:
+    int a,b,c;
 public:
     calc()
     {
-        int a=0, b=0, c=0;
+         a=0, b=0, c=0;
     }
     calc(int x, int y, int z)
     {
-       int  a=x;
-       int  b=y;
-        int c=z;
+         a=x;
+        b=y;
+         c=z;
     }
     int add(int a, int b)
     {
 
-       int c=a+b;
+        c=a+b;
         return c;
     }
     int sub(int a, int b)
     {
-        int c=a-b;
+         c=a-b;
         return c;
     }
      int mul(int a, int b)
     {
-        int c=a*b;
+         c=a*b;
         return c;
     }
      int div (int a, int b)
     {
-        int c=a/b;
+         c=a/b;
         return c;
     }
     ~calc()
     {
-        int a=0,b=0,c=0;
+         a=0,b=0,c=0;
     }
 };
 
