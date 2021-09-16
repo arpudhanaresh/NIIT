@@ -13,4 +13,6 @@ int main()
     cout<<"address stored in double pointer: "<<dptr<<endl;
     cout<<"value of address poiting the pointer: "<<*dptr<<endl;
     cout<<"value stored in pointing the another pointer: "<<**dptr<<endl;
+    cout<<"address of pointer: "<<&ptr<<endl;
+    cout<<"address of double pointer: "<<&dptr<<endl;
 }
