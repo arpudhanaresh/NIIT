@@ -9,5 +9,5 @@ int main()
     cout<<"address of a:"<<&a<<endl;
     c=&a;
     *c=30;
-    cout<<"value of a:"<<a<<endl;
+    cout<<"value of a after changing value in address:"<<a<<endl;
 }
