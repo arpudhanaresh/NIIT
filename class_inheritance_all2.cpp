@@ -30,7 +30,7 @@ class arp1 : public arpudha
     }
 
 };
-class arp2 : public arp1
+class arp2 : public arp1 , public arpudha
 {
 public:
     arp2()
