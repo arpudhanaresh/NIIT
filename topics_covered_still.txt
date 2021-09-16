@@ -3,7 +3,7 @@ variables
 constants
 operators
 control statement/flow control
-if, if-else, switch, for , while, do-while
+if, if-else, switch, for , while, dowhile
 arrays
 access specifiers
 public, private, protected
@@ -13,3 +13,9 @@ oops
 abstraction,encapsulation,inheritance,polymorphism
 object,class,method/function, attributes - cariables/constants
 constructor
+
+inheritance(single-multilevel-and multiple)
+constructor-overloading
+function over-ridding
+pass by value
+pass by reference
