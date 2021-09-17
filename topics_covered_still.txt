@@ -19,3 +19,17 @@ constructor-overloading
 function over-ridding
 pass by value
 pass by reference
+
+pointers 
+inheritance
+generalization
+overridding
+overloading
+call  by reference
+swapping using pointers
+operator overloading
+(to cover)
+
+memory allocation
+operator overloading
+
