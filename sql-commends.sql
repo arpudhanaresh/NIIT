@@ -33,6 +33,10 @@ insert into SalaryDetails values ( 'arpudha' , 40000 , 10)
 insert into SalaryDetails values ('bfje' ,60000 ,15)
 create table SalaryDetails (emp_name nvarchar(40) , salary float , tax_percentage float )
 
+select * from customer where cid > 1;
+
+select * from SalaryDetails where salary between 4000 and 45000
+
 select emp_name , salary , tax_percentage, tax_value = salary * tax_percentage/100 from SalaryDetails
 
 select * from customer where cid > 1;
