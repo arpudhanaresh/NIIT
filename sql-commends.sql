@@ -40,3 +40,5 @@ select * from SalaryDetails where salary between 4000 and 45000
 select emp_name , salary , tax_percentage, tax_value = salary * tax_percentage/100 from SalaryDetails
 
 select * from customer where cid > 1;
+
+select * from emp_name order by SalaryDetails desc;
