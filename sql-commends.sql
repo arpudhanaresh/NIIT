@@ -42,3 +42,22 @@ select emp_name , salary , tax_percentage, tax_value = salary * tax_percentage/1
 select * from customer where cid > 1;
 
 select * from emp_name order by SalaryDetails desc;
+
+elect * from customer where cid = 1;
+
+select * from SalaryDetails where salary between 4000 and 45000
+
+select * from SalaryDetails order by emp_name ;
+
+select * from SalaryDetails where salary like 1
+
+select * from customer where cid like 1
+
+
+select * from SalaryDetails ORDER BY emp_name OFFSET 5 ROWS FETCH NEXT 3 ROWS ONLY
+
+select count(cid) from customer
+
+
+select * from SalaryDetails ORDER BY emp_name OFFSET 5 ROWS FETCH NEXT 3 ROWS ONLY
+
