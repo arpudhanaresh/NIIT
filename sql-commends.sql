@@ -61,3 +61,5 @@ select count(cid) from customer
 
 select * from SalaryDetails ORDER BY emp_name OFFSET 5 ROWS FETCH NEXT 3 ROWS ONLY
 
+select p.pcode , o.cid from products p right join orders o on o.cid = p.pcode
+
