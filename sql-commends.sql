@@ -64,3 +64,5 @@ select * from SalaryDetails ORDER BY emp_name OFFSET 5 ROWS FETCH NEXT 3 ROWS ON
 select p.pcode , o.cid from products p right join orders o on o.cid = p.pcode
 
 Create Table Student(StudentId int IDENTITY(100,1) PRIMARY KEY, StudentName nvarchar(255) NOT NULL , Description nvarchar(50) , StudentAge int NOT NULL, DOB datetime)
+
+Alter Table Student ADD ProfilePic varbinary(MAX) FILESTREAM
