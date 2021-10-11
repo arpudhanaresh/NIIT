@@ -66,3 +66,5 @@ select p.pcode , o.cid from products p right join orders o on o.cid = p.pcode
 Create Table Student(StudentId int IDENTITY(100,1) PRIMARY KEY, StudentName nvarchar(255) NOT NULL , Description nvarchar(50) , StudentAge int NOT NULL, DOB datetime)
 
 Alter Table Student ADD ProfilePic varbinary(MAX) FILESTREAM
+
+Alter Table Student alter column StudentID UNIQUEIDENTIFIER ROWGUIDCOL NOT NULL UNIQUE
