@@ -82,3 +82,7 @@ create view vw_student_department as selec s.name ,s.age,d.deptName from Student
 select * from vw_student_department
 
 alter view vw_student_department as selec s.name ,s.age,d.deptName from Student s JOIN DEPARTMENT d on d.id = s.deptId
+
+sp_rename vw_student_department , vw_stddept
+
+DROP VIEW vw_student_department
