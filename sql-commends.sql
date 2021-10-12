@@ -72,3 +72,5 @@ Alter Table Student alter column StudentID UNIQUEIDENTIFIER ROWGUIDCOL NOT NULL 
 alter table Student ADD CourseName varchar(30)
 
 alter table orders add TotalCost as UnitPrice * Qty PERSISTED
+
+alter table student add constraint chkCity CHECK (city IN('Chennai' , 'Delhi' , 'bangalore'))
