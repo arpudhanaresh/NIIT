@@ -76,3 +76,7 @@ alter table orders add TotalCost as UnitPrice * Qty PERSISTED
 alter table student add constraint chkCity CHECK (city IN('Chennai' , 'Delhi' , 'bangalore'))
 
 sp_rename STUDENT , STUDENT_DETAILS --sp_rename is predefined or userdefined functions
+
+create view ve_student_department as selec s.name ,s.age,d.deptName from Student s JOIN DEPARTMENT d on d.id = s.deptId
+
+select * from vw_student_department
