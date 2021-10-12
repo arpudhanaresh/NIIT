@@ -86,3 +86,12 @@ alter view vw_student_department as selec s.name ,s.age,d.deptName from Student 
 sp_rename vw_student_department , vw_stddept
 
 DROP VIEW vw_student_department
+
+declare @Rate int SELECT @Rate =max(Rate) from Orders PRINT @Rate
+
+declare @Rate int select @Rate = Rate From Orders where orderId =1 
+IF @Rate <15 PRINT 'Rate will have 10% Tax' 
+ELSE
+BEGIN Print 'Rate will have 20% Tax' Print 'Rate=' Print @Rate 
+END
+Go
