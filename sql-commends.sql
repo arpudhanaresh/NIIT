@@ -70,3 +70,5 @@ Alter Table Student ADD ProfilePic varbinary(MAX) FILESTREAM
 Alter Table Student alter column StudentID UNIQUEIDENTIFIER ROWGUIDCOL NOT NULL UNIQUE
 
 alter table Student ADD CourseName varchar(30)
+
+alter table orders add TotalCost as UnitPrice * Qty PERSISTED
