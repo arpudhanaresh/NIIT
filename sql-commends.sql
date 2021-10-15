@@ -95,3 +95,17 @@ ELSE
 BEGIN Print 'Rate will have 20% Tax' Print 'Rate=' Print @Rate 
 END
 Go
+
+
+
+CREATE PROCEDURE sp_shippingLocatoin @ shipping_id int 
+AS
+BEGIN
+	select sl.ShippingLineCode ,sl.shippingLineName l.locationCode , l.locationName
+	FROM ShippingLines sl
+	INNER JOIN Locations l
+	ON l.id= sl.LocationId
+	WHERE sl.id =@shipping_id
+END
+
+
