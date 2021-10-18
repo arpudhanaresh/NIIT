@@ -1,0 +1,35 @@
+LOCKING
+NEED FOR LOCKING
+
+1. Lost Updates - A lost update occurs when two or more transcations try to modify the same row
+2. uncommitted depedency -  Dirty Read. This problem occurs when a transactions queries data from a table when the other transactions is in process of modifying data
+3. Inconsistent Analysis - Non repetable program. This problem arieses when the data is changed between simulatanious user
+4. Phantom Reads - When new Records inserted by a user are identified by transcations that started prior to the INSERT statment
+
+Locks - Shared , Update , exclusive
+
+
+Controlling Locks
+
+1. READ UNCOMMITED - This isolation level specifies that a transcation can read the data modified by the current transcation but the modifications have not been commited yet
+2.READ COMMITED - specifies that a transcation cannot read the data that is being modified by the current transcation
+3. REPEATBALE READ - specifies that a transcation cannot read the data that is being modified by the current transcation. IN addition no other transction can update the data  that is being read by the current transcation until the current transcations completed
+4. SNAPSHOT - provides every transcation with a snapshot of the current data .own copy of the data , wehn then transcation is ready to update the data
+5. SERIALIZABLE - specifies that no transcation can read , modify or insert new data while the data is being read or updated by the current tranactions
+
+query for LOCKS:
+
+SET TRANSCATION ISOLATION LEVEL 
+READ COMMITED
+BEGIN TRANSCATION ST
+BEGIN TRY 
+UPDATE STUDENT SET AGE = 30 where stuId = 100
+UPDATE STUDENT SET MOBILE = '9876543210' WHERE StuId = 101
+COMMIT TRANSCATION ST
+PRINT 'Transcation Executed'
+END TRY
+BEGIN CATCH
+ROLLBACK TRANSCATION ST
+PRINT 'Transcation Rollback'
+END CATCH
+
